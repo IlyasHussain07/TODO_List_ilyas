@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    background: #02a89a;
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+    padding-top: 50px;
+}
+.todoListMaster{
+    margin: auto;
+    max-width: 600px;
+    width: 100%;
+}
+.todoList{
+    background: #fff;
+    box-shadow: 0 0 15px 0 #000;
+}
+.todoList h1 {
+    padding: 20px;
+}
+.inputBox{
+    padding: 10px;
+    position: relative;
+    border-bottom: 1px dotted #000;
+}
+.inputBox input{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+}
+.inputBox input:focus{
+    border: 1px solid #02a89a;
+    outline: none;
+}
+.inputBox span{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 35px;
+    background: #02a89a;
+    text-align: center;
+    padding-top: 6px;
+    box-shadow: 0 0 5px 0 #000;
+    cursor: pointer;
+}
+.todoInCompList{
+    margin-top: 10px;
+}
+.todoItems ul {
+    list-style: none;
+}
+.todoItems ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.todoItems ul li p{
+    font-size: 18px;
+}
+.todoButtons{
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.todoIcons{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.todoCompItems{
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 15px 0 #000;
+}
+.todoCompItems h1{
+    padding: 20px;
+    border-bottom: 1px dotted #000;
+}
+
+
+@media(max-width:768px){
+    .todoListMaster{
+        max-width: 390px;
+    }
+    .todoItems ul li{
+        padding: 15px;
+    }
+}
+
+
+
+
+/* Dropdowns */
+
+.edit{
+    position: absolute;
+    top: -27px;
+    left: 8px;
+    padding: 5px;
+    font-size: 14px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: block;
+}
+.editOff{
+    display: none;
+}
+.complete{
+    position: absolute;
+    top: -27px;
+    left: 35px;
+    padding: 5px;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: block;
+}
+.completeOff{
+    display: none;
+}
+.delete{
+    position: absolute;
+    top: -27px;
+    left: 92px;
+    padding: 5px;
+    font-size: 14px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: block;
+}
+.deleteOff{
+    display: none;
+}
+
+
+.inComplete{
+    position: absolute;
+    top: -27px;
+    left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: block;
+}
+.inCompleteOff{
+    display: none;
+}
+.deleteOn{
+    position: absolute;
+    top: -27px;
+    left: 80px;
+    padding: 5px;
+    font-size: 14px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: block;
+}
